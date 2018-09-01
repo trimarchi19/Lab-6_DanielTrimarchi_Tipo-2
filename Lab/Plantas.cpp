@@ -8,6 +8,9 @@ bool funcion;
 	Plantas::Plantas(){
 
 	}
+	Plantas::~Plantas(){
+
+	}
 	void Plantas::setFuncionamiento(bool pFun){
 		funcion=pFun;
 	}
@@ -49,4 +52,7 @@ bool funcion;
 	}
 	string Plantas::getPais(){
 		return pais;
+	}
+	void Plantas::toString(){
+		cout<<"Nombre: "<<nombre <<" Pais: "<<pais<<endl;
 	}

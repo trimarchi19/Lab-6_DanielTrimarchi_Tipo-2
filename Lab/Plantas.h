@@ -3,6 +3,8 @@
 // Poseen nombre, año de fundación, país de ubicación, ingresos, egresos, ganancia neta y un
 //indicador para comprobar si se encuentra en funcionamiento.
 #include <string>
+#include <iostream>
+
 using namespace std;
 class Plantas
 {
@@ -13,6 +15,7 @@ private:
 public:
 	Plantas();
 	~Plantas();
+	void toString();
 	void setFuncionamiento(bool);
 	void setIngresos(int);
 	void setEgresos(int);

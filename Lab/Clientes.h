@@ -1,6 +1,8 @@
 #ifndef CLIENTES_H
 #define CLIENTES_H
 #include <string>
+#include <iostream>
+
 using namespace std;
 
 class Clientes{
@@ -9,6 +11,7 @@ class Clientes{
 	string nombre;
 
 public:
+	void toString();
 	Clientes();
 	int getFondo();
 	void setFondo(int);

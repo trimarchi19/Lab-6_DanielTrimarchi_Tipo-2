@@ -10,12 +10,12 @@ private:
 
 public:
 		ClienteIndividual();
-	void setGobienro(bool);
+	void setGobierno(bool);
 	void setGrado(string);
-	void setIndentidad(string);
-	bool getGobienro();
+	void setIdentidad(string);
+	bool getGobierno();
 	string getGrado();
-	string getIndentidad();
+	string getIdentidad();
 	
 };
 #endif

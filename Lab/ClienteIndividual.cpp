@@ -3,21 +3,21 @@
 		ClienteIndividual::ClienteIndividual(){
 
 		}
-	void ClienteIndividual::setGobienro(bool pGob){
+	void ClienteIndividual::setGobierno(bool pGob){
 			gobierno=pGob;
 	}
 	void ClienteIndividual::setGrado(string pGrado){
 		grado=pGrado;
 	}
-	void ClienteIndividual::setIndentidad(string pIdenti){
+	void ClienteIndividual::setIdentidad(string pIdenti){
 		identidad=pIdenti;
 	}
-	bool ClienteIndividual::getGobienro(){
+	bool ClienteIndividual::getGobierno(){
 		return gobierno;
 	}
 	string ClienteIndividual::getGrado(){
 		return grado;
 	}
-	string ClienteIndividual::getIndentidad(){
+	string ClienteIndividual::getIdentidad(){
 		return identidad;
 	}

@@ -15,3 +15,6 @@ string Clientes::getNombre(){
 void Clientes::setNombre(string pNombre){
 	nombre=pNombre;
 }
+void Clientes::toString(){
+	cout<<"Nombre: "<<nombre<<endl;
+}

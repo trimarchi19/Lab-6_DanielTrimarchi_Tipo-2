@@ -13,8 +13,8 @@ private:
 	string nombre;
 public:
 	PPublicas();
-	void setNombre(string);
-	string getNombre();
+	void setNoombre(string);
+	string getNoombre();
 	void setMaxc(int);
 	int getMaxc();
 

@@ -3,15 +3,15 @@
 	PPublicas::PPublicas(){
 
 	}
-	void PPublicas::setNombre(string pNom){
+	void PPublicas::setNoombre(string pNom){
 		nombre=pNom;
 	}
-	string PPublicas::getNombre(){
+	string PPublicas::getNoombre(){
 		return nombre;
 	}
 	void PPublicas::setMaxc(int pMax){
 		maxc=pMax;
 	}
 	int PPublicas::getMaxc(){
-		return pMax;
+		return maxc;
 	}
