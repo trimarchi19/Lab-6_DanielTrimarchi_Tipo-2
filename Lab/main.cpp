@@ -8,7 +8,7 @@
 #include "PPublicas.h"
 #include "PMixta.h"
 #include "PPrivadas.h"
-
+#include <typeinfo>
 
 #include <iostream>
 #include <string>
@@ -35,7 +35,7 @@ int main(){
  		<<"2) Crear Cliente"<<endl
  		<<"3) Eliminar Planta"<<endl
  		<<"4) Eliminar Cliente"<<endl
- 		<<"5) Listar Plantas"<<endl
+ 		<<"5) Ingresar cliente a planta"<<endl
  		<<"6) Destruir Imperio"<<endl
  		<<"Que Desea Hacer?: ";
  		cin>> opcion;
@@ -71,7 +71,18 @@ int main(){
  				}
  				break;
  			case 5:
- 				cout<<"No se implemento esta Función"<<endl;
+ 			int pos;
+ 				//cout<<"No se implemento esta Función"<<endl;
+ 					if(plantas.size()>0){
+ 				for(int i=0;i<plantas.size();i++){
+ 					cout<<i<<") ";plantas[i].toString();
+ 				}
+ 				cout<<" a cual desea agregar: ";
+ 				cin >>pos;
+ 				if(typeid(plantas[pos])==typeid(PSencilla)){
+ 					//plantas[pos]->addCliente()
+ 				}
+ 				}
  				break;
  			case 6:
  			cout<<"-------------------------------------"<<endl;
@@ -87,7 +98,7 @@ int main(){
 	return 0;
 }
 void crearplanta(vector<Plantas>& plantas){
-	int opcion,ingresos,egresos,ganancia=0,funcionamiento;
+	int opcion,ingresos=0,egresos,ganancia=0,funcionamiento;
 	bool activa=false;
 	string anio,pais,nom;
 	/*
@@ -101,8 +112,7 @@ indicador para comprobar si se encuentra en funcionamiento.
 	cin >>anio;
 	cout<<"Ingrese la ubicacion: ";
 	cin >>pais;
-	cout<<"Ingrese ingresos: ";
-	cin >>ingresos;
+
 	cout<<"Ingrese egresos: ";
 	cin >>egresos;
 	cout<<"1) Si"<<endl<<"2) No"<<endl<<"Esta en funcionamiento?: ";
